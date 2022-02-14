@@ -86,7 +86,7 @@ namespace BusinessLogic.Services
                     matchCount = matchCount + 1;
                 }
 
-                // Accorging to the requirement, only consider a match to be valid if 4 or more numbers matched($85 or more), otherwise ignore
+                // According to the requirement, only consider a match to be valid if 4 or more numbers matched($85 or more), otherwise ignore
 
                 if (matchCount > 3)
                 {
