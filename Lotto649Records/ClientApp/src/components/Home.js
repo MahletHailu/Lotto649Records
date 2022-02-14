@@ -262,6 +262,10 @@ export class Home extends Component {
                         }}> 
                         <div>Total won: ${this.state.result?.totalWon}</div>
                         <div>You spent: ${this.state.result?.totalCost}</div>
+                        <div>Net won/loss: ${this.state?.result?.totalWon > this.state?.result?.totalCost 
+                            ? this.state?.result?.totalWon - this.state?.result?.totalCost
+                            : this.state?.result?.totalCost - this.state?.result?.totalWon}
+                        </div>
                     </div>
                 </Box>}
             </div>
