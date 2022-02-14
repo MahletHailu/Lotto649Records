@@ -99,6 +99,10 @@ This is the sum of all money won.
 
 The total cost of how much they spent in total on the 3,620 draws. Cost depends on draw number/date.
 
+# Net won/loss:
+
+The difference of total won and total cost.
+
 # Note:
 
 I ignored any data from the csv file where draw number > 3,620 as the instruction explicitely mentioned to include draws with draw number 1 - 3620 only.
