@@ -31,43 +31,71 @@ Method: Post
 sample body :
 
 {
+
     "number1": "1",
+    
     "number2": "2",
+    
     "number3": "3",
+    
     "number4": "4",
+    
     "number5": "5",
+    
     "number6": "6"
+    
 }
+
 
 Result for the example input above
 
 {
+
     "matchedDraws": [
+    
         {
+        
             "drawNumber": 883,
+            
             "drawDate": "1992-07-08T00:00:00",
+            
             "matchCount": 4,
+            
             "won": 85.0
+            
         },
+        
         {
+        
             "drawNumber": 3323,
+            
             "drawDate": "2015-11-25T00:00:00",
+            
             "matchCount": 4,
+            
             "won": 85.0
+            
         }
+        
     ],
+    
     "totalWon": 170.0,
+    
     "totalCost": 5981.0
+    
 }
 
 
-# matchedDraws 
+
+# Matched Draws 
 
 contains a list of historical draws that are worth of $85 or more. To be a valid matched draw, atleast 4 of the input numbers out of the 6 must match.
-# totalWon: 
+
+# Total Won: 
 
 This is the sum of all money won.
-# total cost: 
+
+# Total Cost: 
 
 The total cost of how much they spent in total on the 3,620 draws. Cost depends on draw number/date.
 
