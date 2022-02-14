@@ -61,9 +61,15 @@ Result for the example input above
 }
 
 
-# matchedDraws contains a list of historical draws that are worth of $85 or more. To be a valid matched draw, atleast 4 of the input numbers out of the 6 must match.
-# totalWon: This is the sum of all money won.
-# total cost: The total cost of how much they spent in total on the 3,620 draws. Cost depends on draw number/date.
+# matchedDraws 
+
+contains a list of historical draws that are worth of $85 or more. To be a valid matched draw, atleast 4 of the input numbers out of the 6 must match.
+# totalWon: 
+
+This is the sum of all money won.
+# total cost: 
+
+The total cost of how much they spent in total on the 3,620 draws. Cost depends on draw number/date.
 
 # Note:
 
