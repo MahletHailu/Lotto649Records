@@ -145,6 +145,7 @@ export class Home extends Component {
                     <Grid item xs={12} md={2}>
                     <TextField
                       required
+                      type="number"
                       error={this.state.errornumber1}
                       name="number1"
                       variant="outlined"
