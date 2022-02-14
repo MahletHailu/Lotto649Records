@@ -110,12 +110,12 @@ export class Home extends Component {
         }
         else{
             //Check for duplicates
-            if( e.target?.value === this.state.number1 ||
-                e.target?.value === this.state.number2 ||
-                e.target?.value === this.state.number3 ||
-                e.target?.value === this.state.number4 ||
-                e.target?.value === this.state.number5 ||
-                e.target?.value === this.state.number6 
+            if( (e.target?.value === this.state.number1 && e.target.name !== 'number1') ||
+                (e.target?.value === this.state.number2 && e.target.name !== 'number2') ||
+                (e.target?.value === this.state.number3 && e.target.name !== 'number3') ||
+                (e.target?.value === this.state.number4 && e.target.name !== 'number4') ||
+                (e.target?.value === this.state.number5 && e.target.name !== 'number5') ||
+                (e.target?.value === this.state.number6 && e.target.name !== 'number6') 
                 )
                 {
                     // Duplicates not allowed
