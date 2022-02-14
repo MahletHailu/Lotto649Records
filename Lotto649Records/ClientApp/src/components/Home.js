@@ -35,7 +35,8 @@ export class Home extends Component {
             errornumber4: false,
             errornumber5: false,
             errornumber6: false,  
-            alert: false       
+            alert: false,
+            showResult: false     
         };
 
         this.processNumbers = this.processNumbers.bind(this);
@@ -78,12 +79,14 @@ export class Home extends Component {
                     totalWon: 0,
                     totalCost: 0,
                 });
+                this.setState({showResult: true});
 
-                console.log(this.state.result?.totalWon);
+                // Handle error here
             });
     }
 
     async postData(url, data) {
+
         const response = await fetch(url, {
             method: 'POST',
             mode: 'cors',
@@ -96,6 +99,8 @@ export class Home extends Component {
             referrerPolicy: 'no-referrer',
             body: JSON.stringify(data)
         });
+
+        //Handle error : to be done.
         return response.json();
     }
 
@@ -238,7 +243,7 @@ export class Home extends Component {
                      </Alert>
                     </Box>}
                 </Box>
-                {(this.state.result?.matchedDraws?.length > 0) && <Box
+                {(this.state.showResult) && <Box
                   sx={{ mt: 4 }}
                 >
                     <List>
