@@ -105,7 +105,7 @@ The difference of total won and total cost.
 
 # Note:
 
-I ignored any data from the csv file where draw number > 3,620 as the instruction explicitely mentioned to include draws with draw number 1 - 3620 only.
+I ignored any data from the csv file where draw number > 3,620 as the instruction explicitely mentioned to include draws with draw number 1 - 3620 only. The instruction also didn't mention including bonus numbers so I assumed they are being considered.
 
 # Client
 
