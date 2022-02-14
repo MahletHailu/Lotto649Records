@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ModelsTests\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Lotto649Records\Lotto649Records.csproj" />
   </ItemGroup>
 
